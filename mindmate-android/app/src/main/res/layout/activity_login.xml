@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_textview"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_style"
+        android:gravity="center_horizontal"
+        android:text="AI心理医生"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/tv_title"
+            android:background="@drawable/bg66" />
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card_view"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_textview"
+        android:drawableStart="@drawable/user09"
+        android:drawablePadding="10dp"
+        android:hint="请输入用户名"
+        android:padding="10dp"
+
+        android:textColor="@color/DeepSkyBlue"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_account"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_textview"
+        android:drawableStart="@drawable/mima09"
+        android:drawablePadding="10dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/DeepSkyBlue"
+        android:textSize="25sp" />
+
+
+    <RadioGroup
+        android:id="@+id/id_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="心理治疗用户" />
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（暂未实现）" />
+        <!--        <RadioButton-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/radio_3"-->
+        <!--            android:text="教研室主任"-->
+        <!--            />-->
+        <!--        <RadioButton-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/radio_4"-->
+        <!--            android:text="管理员"-->
+        <!--            />-->
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="新用户注册"
+        android:textColor="@color/DarkTurquoise"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_register"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:text="登录"
+        android:textSize="25sp"
+        android:typeface="monospace" />
+
+
+</RelativeLayout>
